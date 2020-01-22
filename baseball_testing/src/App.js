@@ -2,13 +2,16 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import BallStrikeTracker from './Components/BallStrikeCard';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import StrikeButton from './Components/Buttons';
 
 function App() {
   return (
     <div className="App">
       <h1>Baseball App</h1>
 <BallStrikeTracker />
+<br/>
+{/* <StrikeButton/> */}
     </div>
   );
 }
