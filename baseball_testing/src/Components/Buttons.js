@@ -1,25 +1,37 @@
 import React from 'react';
 import {Button} from 'reactstrap';
 
-export default function StrikeButton({Ball}, {Strike}) {
+export default function Buttons({ball, setBall, strike, setStrike}) {
 
     function changeStrike(){
-        console.log({Ball});
-        if({Ball} >= 0 && {Ball} < 3){
-            setBall(props.Ball + 1)
+        if(strike >= 0 && strike < 2){
+            setStrike(strike+1)
+        } else if (strike === 2) {
+            setStrike(0)
+            setBall(0)
         }
     }
 
     function changeBall(){
-        console.log('BALL')
+        if(ball >= 0 && ball < 3){
+            setBall(ball+1)
+        } else if (ball === 3) {
+            setBall(0)
+            setStrike(0)
+        }
     }
 
     function hitFoul(){
-        console.log('FOUL')
+        if(strike >= 0 && strike < 2){
+            setStrike(strike+1)
+        } else if (strike === 2) {
+            setStrike(2)
+        }
     }
 
     function gotHit(){
-        console.log('HIT')
+        setBall(0)
+        setStrike(0)
     }
 
     return(

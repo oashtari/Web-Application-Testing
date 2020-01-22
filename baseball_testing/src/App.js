@@ -1,9 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import BallStrikeTracker from './Components/BallStrikeCard';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import StrikeButton from './Components/Buttons';
+import Buttons from './Components/Buttons';
 
 function App() {
   return (
@@ -11,7 +10,7 @@ function App() {
       <h1>Baseball App</h1>
 <BallStrikeTracker />
 <br/>
-{/* <StrikeButton/> */}
+{/* <Buttons/> */}
     </div>
   );
 }
