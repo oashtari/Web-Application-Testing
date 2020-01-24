@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches the snapshot 1`] = `
+<div>
+  <h2>
+    Balls: 
+    0
+     
+  </h2>
+  <h2>
+    Strikes: 
+    0
+     
+  </h2>
+  <div
+    className="all_buttons"
+    data-testid="button_container"
+  >
+    <button
+      aria-label={null}
+      className="btn btn-danger"
+      onClick={[Function]}
+      type="button"
+    >
+      Strike
+    </button>
+    <button
+      aria-label={null}
+      className="btn btn-secondary"
+      onClick={[Function]}
+      type="button"
+    >
+      Ball
+    </button>
+    <button
+      aria-label={null}
+      className="btn btn-warning"
+      onClick={[Function]}
+      type="button"
+    >
+      Foul
+    </button>
+    <button
+      aria-label={null}
+      className="btn btn-success"
+      onClick={[Function]}
+      type="button"
+    >
+      HIT
+    </button>
+  </div>
+</div>
+`;
